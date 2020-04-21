@@ -21,7 +21,7 @@
     right: 0;
     bottom: 0;
     position: absolute;
-    height: fit-content;
+    
     z-index: -1;
 
 }
@@ -416,5 +416,38 @@ color: #400496;
     margin: 10px;
     margin-left: 0;
   }
+  .cta-left{
+    border:2px solid #fff ;
+  }
 
+}
+
+@media only screen and (max-width:460px){
+  .img{
+    position: absolute;
+    right:0px;
+    transform: scale(0.26) translateX(670px) translateY(90px);
+     
+    bottom: 0;
+  }
+  .safe{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  #bgr{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    transform: translateY(0px);
+  }
+  .long-copy{
+    width:75% ;
+  
+  }
+  .cta-right{
+    border:2px solid #fff ;
+  }
+  
 }
