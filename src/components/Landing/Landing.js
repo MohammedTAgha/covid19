@@ -1,5 +1,6 @@
-import React from 'react'
+import React,{useEffect, Component} from 'react'
 import {Link} from 'react-router-dom';
+import $ from 'jquery'
 //import {styles} from './Landing.module.css';
 import smallvirus from '../../img/smallvirus.svg';
 import virus from '../../img/virus.svg';
@@ -8,7 +9,15 @@ import virus from '../../img/virus.svg';
 import './stylse.css'
 
 
+
 const Landing = () => {
+    
+    
+    useEffect(()=>{
+         $('container').addClass('stop-scrolling')
+       // window.onscroll = function () { window.scrollTo(0, 0); };
+       console.log('effect added')
+    },[])
     return (
         <div clsss="container">
             <div className="safe">SYAY SAFE</div>
@@ -24,7 +33,7 @@ const Landing = () => {
             </main>
             <img className="small-virus" src={smallvirus} alt="alt" />
             <img className="small-virus2" src={smallvirus} alt="alt" />
-            <img src={virus} alt="alt"/>
+            <img className="img" src={virus} alt="alt"/>
             <svg id="bgl" xmlns="http://www.w3.org/2000/svg" width="897.313" height="223.328" viewBox="0 0 897.313 223.328">
                 <path id="left-bg" d="M907.595,1680.5l-5.456-1.312c-86.873-20.894-891.857-222.016-891.857-222.016V1680.5" transform="translate(-10.282 -1457.169)" fill="#7c3bd1" />
             </svg>

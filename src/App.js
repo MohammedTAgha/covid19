@@ -47,11 +47,11 @@ class App extends Component {
       <div className={styles.container}>
            {/** I don't know how ther is no proplem here thires a millons of data but no mixing and  no errors :)*/}
       
-        <Navigation className={styles.nav} />
+        <Navigation  className={styles.nav} />
         <Route path="/" exact >
-        <Landing />
+        <Landing style={{overflow: 'hidden'}}/>
         </Route>
-        <Route path="/"  >
+        <Route path="/meaters"  exact >
           <Cards data={data}/>
           <Countries handleCountryChange={this.handleCountryChange} />
           <Chart data={this.state.data} country={this.state.country}/>

@@ -1,13 +1,14 @@
-.container{
+ .container{
+
     width: 100%;
     height: 100%;
     background: rgba(236, 0, 0, 0.726);
-
+    overflow: hidden
 }
 
 .logo img{
-    height: 60px;
-    float: left;
+    height:74px;
+    position: relative;
 }
 #bgl{
     left: 0;
@@ -20,7 +21,7 @@
     right: 0;
     bottom: 0;
     position: absolute;
-    float: right;
+    height: fit-content;
     z-index: -1;
 
 }
@@ -95,7 +96,7 @@ color: #400496;
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-img{
+.img{
     position: absolute;
     float: right;
     z-index: 500;
@@ -107,12 +108,13 @@ img{
     user-select: none; /* Standard */
 }
 .small-virus{
+  position: absolute;
   right: 30px;
   top: 2%;
   transform:scale(0.88);
 }
 .small-virus2{
-  
+  position: absolute;
   bottom: 9.3%;
   left: 40%;
   
@@ -190,4 +192,229 @@ img{
 }
 
 
+ @media (min-width:1400px){
+    .img{
+      right:10%;
+      transform: scale(1.25);
+    }
+    .small-virus2{
+      bottom: 9%;
+      left: 38%;
+    }
 
+    .safe{
+      font-size: 220px;
+    }
+    .long-copy{
+      font-size: 28px;
+      line-height: 38px;
+      width: 38%;
+      margin-top: 25px;
+    }
+    .bu-holder button{
+      width: 180px;
+      height:55px;
+      font-size: 20px;
+    }
+ }
+ @media only screen and (min-width:1300px){
+  .img{
+    right:5%;
+    transform: scale(1.05);
+     
+  }
+  .small-virus2{
+    bottom: 10%;
+    left: 36%;
+  }
+  .safe{
+    margin-left: 5px;
+  }
+  .long-copy{
+    font-size: 26px;
+    line-height: 34px;
+    width: 38%;
+     
+  }
+
+ }
+ @media (max-width:1170px){
+  .img{
+    right:4%;
+    transform: scale(1.05);
+    bottom: 12%;
+     
+  }
+  .small-virus2{
+    bottom: 10%;
+    left: 24%;
+
+  }
+ 
+
+
+ }
+
+ @media only screen and (max-width:1090px){
+
+  .img{
+    right:3%;
+    transform: scale(0.99);
+    bottom: 10%;
+    
+  }
+  .safe{
+    font-size: 170px;
+  }
+  .long-copy{
+    font-size: 24px;
+  }
+  
+
+ }
+
+/* 990 */
+
+@media only screen and (max-width:990px){
+  .img{
+    right:2%;
+    transform: scale(0.90);
+    bottom: 7%;
+    
+  }
+  .long-copy{
+    width: 40%;
+  } 
+#right-bg{
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+}
+#bgl{display: none; }
+.small-virus2{display: none;}
+
+}
+@media only screen and (max-width:930px){
+  .img{
+    right:0.2%;
+    transform: scale(0.8);
+    bottom: 12%;
+    
+  }
+  .safe{
+    margin-left: 30px;
+  }
+  .long-copy{
+    font-size: 20px;
+  }
+  .bu-holder button{
+    width: 125px;
+    height:40px;
+    font-size: 14px;
+    margin: 25px 10px;
+  }
+  .safe{
+    font-size: 140px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width:860px){
+  .img{
+    right:0;
+    transform: scale(0.6);
+    bottom: 5%;
+  }
+  .safe{
+    font-size: 115px;
+    line-height: 150px;
+  }
+  #bgr{
+    height: 900px;
+    width: 600px;
+    position: absolute;
+    transform: translateY(250px);
+  }
+  #right-bg{
+    bottom: 0;
+  }
+  .long-copy{
+    width: 50%;
+    font-size: 26px;
+  }
+  .bu-holder{
+    float: left;
+  }
+}
+
+/* 880 */
+@media only screen and (max-width:720px){
+  .img{
+    position: absolute;
+    right:0px;
+    transform: scale(0.5) translateX(230px);
+     
+    bottom: 2%;
+  }
+  .safe{
+    font-size: 90px;
+    line-height: 130px;
+  }
+  .nav-bar ul {display: none;}
+  .nav-bar .logo {
+     width: 60%;
+    
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  
+
+    margin-left: 4px;
+    padding-left: 5%;
+  }
+
+}
+
+@media only screen and (max-width:600px){
+  .safe{
+    margin-top: 40px;
+    font-size: 70px;
+    line-height: 100px;
+  }
+  .long-copy{
+    font-size: 22px;
+    width: 70%;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .img{
+    position: absolute;
+    right:0px;
+    transform: scale(0.42) translateX(260px) translateY(50px);
+     
+    bottom: 0;
+  }
+}
+@media only screen and (max-width:490px){
+  .img{
+    position: absolute;
+    right:0px;
+    transform: scale(0.35) translateX(370px) translateY(70px);
+     
+    bottom: 0;
+  }
+  .safe{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .long-copy{
+    margin-bottom: 10px;
+  }
+  .bu-holder button{
+    margin: 10px;
+    margin-left: 0;
+  }
+
+}
