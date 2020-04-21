@@ -4,11 +4,6 @@
     background: rgba(236, 0, 0, 0.726);
 
 }
-
-.logo img{
-    height: 60px;
-    float: left;
-}
 #bgl{
     left: 0;
     bottom: 0;
@@ -25,11 +20,11 @@
 
 }
 .nav-bar {
-    position: sticky;
+    
     width: 100%;
     height: 65px;
      
-    background-color: rgba(255, 255, 255, 0.281);
+    
     margin-top: 8px;
     display: flex;
      
@@ -80,14 +75,13 @@ color: #400496;
     text-decoration: none;
     letter-spacing: 0.04em;
     transition: all 0.5s ease 0s;
-    font-size: 25px;
+    
   
     /* height: 64px; */
     /* margin: auto; */
   }
-  
   .nav-bar ul li a:hover {
-   color: #400496;
+   
     text-decoration: none;
   }
   
@@ -188,6 +182,3 @@ img{
   color: #7c3bd1;
   
 }
-
-
-
