@@ -18,6 +18,16 @@ const Navigation = () => {
             </Link>     
             <li><a href="/">About</a></li>
         </ul>
+        <div className="Hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 35 28">
+            <g id="Hamburger" transform="translate(-3.504 -7.838)">
+                <line id="Line_4" data-name="Line 4" x2="31" transform="translate(5.504 9.838)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4"/>
+                <line id="Line_5" data-name="Line 5" x2="31" transform="translate(5.504 22.838)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4"/>
+                <line id="Line_6" data-name="Line 6" x2="31" transform="translate(5.504 33.838)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4"/>
+            </g>
+</svg>
+
+        </div>
     </div>
      );
 }
