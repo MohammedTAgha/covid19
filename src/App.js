@@ -16,7 +16,6 @@ class App extends Component {
   state={
     data:{},
     country:''
-    
   }
 
   async componentDidMount(){
@@ -24,7 +23,7 @@ class App extends Component {
     const data= await fetchData("");
     //console.log('******');
     
-    this.setState({data})
+    this.setState({data})   //add data to the state
     console.log('==== componend did mount end====')
    
     //console.log(this.state)
@@ -33,6 +32,7 @@ class App extends Component {
   handleCountryChange = async (country)=>{
 
     const data= await fetchData(country);
+   // console.log(`▶ ${country} `)
     //data.confirmed?console.log('ok'):console.log('noooooo')
     this.setState({data:data,country:country}) // add data to globalState to be viewed by general meaters
     // console.log('---**--')    
@@ -51,8 +51,9 @@ class App extends Component {
         <Route path="/" exact >
         <Landing style={{overflow: 'hidden'}}/>
         </Route>
+
         <Route path="/meaters"  exact >
-          <Cards data={data}/>
+          <Cards data={data}/>          {/**data is from state ⇉ line 41 */}
           <Countries handleCountryChange={this.handleCountryChange} />
           <Chart data={this.state.data} country={this.state.country}/>
         </Route>

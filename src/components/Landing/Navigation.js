@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div className="nav-bar" style={{ position: "sticky", top: 0 }}>
       <div className="logo">
-        <img src={logo} />
+        <img src={logo} alt="corona "/>
       </div>
       <ul>
         <Link to="/">

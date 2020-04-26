@@ -4,7 +4,7 @@ import {fetchCountries} from '../../API'
 import {NativeSelect,FormControl} from '@material-ui/core';
 
 
- const Countries = ({handleCountryChange})=>{
+ const Countries = ({handleCountryChange})=>{ // as props 👍
 
     const [featchedCountries , SetFeatchedCountries]=useState([])
     //console.log(featchedCountries)
@@ -23,7 +23,7 @@ useEffect(()=>{
 
     return(
         <FormControl>
-            <NativeSelect defaultValue="" onChange={(e)=>{handleCountryChange(e.currentTarget.value)}}>
+            <NativeSelect defaultValue="" onChange={(e)=>{handleCountryChange(e.currentTarget.value)}}> { /**add selected country as an argument */}
                 <option value="">Global</option>
                 {featchedCountries.map((countryName,i)=><option key={i} value={countryName}>{countryName}</option>)}
             </NativeSelect>
