@@ -87,6 +87,13 @@ color: #400496;
     /* margin: auto; */
   }
   
+  .hamburger{
+    padding: 10px;
+    padding-right: 25px;
+    display: none;
+    cursor: pointer;
+  }
+  
   .nav-bar ul li a:hover {
    color: #400496;
     text-decoration: none;
@@ -141,9 +148,14 @@ color: #400496;
         user-select: none; /* Standard */
         opacity: 0.19;
 }
+#side-Virus{
+  display: none;
+}
 
 .bu-holder{
   float: right;
+  /* display: inline-block; */
+
    
 }
 .bu-holder button{
@@ -157,7 +169,6 @@ color: #400496;
   direction: ltr;
   margin: 35px 10px;
   transition: all 0.3s ease;
-  
  
 
 }
@@ -192,6 +203,18 @@ color: #400496;
 }
 
 
+.lowerMobile{
+  display: none;
+  
+}
+.lowerMobile path{
+  width: 600px;
+}
+
+ /*** --------------------------------  */
+ /*** --------------------------------  */
+ /*** --------------------------------  */
+
  @media (min-width:1400px){
     .img{
       right:10%;
@@ -199,7 +222,8 @@ color: #400496;
     }
     .small-virus2{
       bottom: 9%;
-      left: 38%;
+      left: 35%;
+       
     }
 
     .safe{
@@ -217,6 +241,8 @@ color: #400496;
       font-size: 20px;
     }
  }
+
+
  @media only screen and (min-width:1300px){
   .img{
     right:5%;
@@ -225,7 +251,8 @@ color: #400496;
   }
   .small-virus2{
     bottom: 10%;
-    left: 36%;
+    left: 44%;
+
   }
   .safe{
     margin-left: 5px;
@@ -254,7 +281,7 @@ color: #400496;
 
 
  }
-
+ @media only screen and (max-width:1090px){#bgl{display: none; }}
  @media only screen and (max-width:1090px){
 
   .img{
@@ -290,7 +317,7 @@ color: #400496;
   bottom: 0;
   height: 400px;
 }
-#bgl{display: none; }
+
 .small-virus2{display: none;}
 
 }
@@ -321,8 +348,9 @@ color: #400496;
 @media only screen and (max-width:860px){
   .img{
     right:0;
-    transform: scale(0.6);
+    transform: scale(0.6) translateX(90px);
     bottom: 5%;
+    
   }
   .safe{
     font-size: 115px;
@@ -348,11 +376,17 @@ color: #400496;
 
 /* 880 */
 @media only screen and (max-width:720px){
+  .hamburger{
+    display: block;
+  }
+  .small-virus2{
+    display: none;
+  }
   .img{
     position: absolute;
     right:0px;
     transform: scale(0.5) translateX(230px);
-     
+    
     bottom: 2%;
   }
   .safe{
@@ -373,13 +407,19 @@ color: #400496;
     padding-left: 5%;
   }
 
-}
+ 
 
+}
+@media only screen and (max-width:530px){ 
+  .lowerMobile{display: block;}
+  #bgr{display: none;}
+}
+/* 600 - 400 */
 @media only screen and (max-width:600px){
   .safe{
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 70px;
-    line-height: 100px;
+    line-height: 90px;
   }
   .long-copy{
     font-size: 22px;
@@ -394,6 +434,7 @@ color: #400496;
      
     bottom: 0;
   }
+
 }
 @media only screen and (max-width:490px){
   .img{
@@ -423,6 +464,7 @@ color: #400496;
 }
 
 @media only screen and (max-width:460px){
+ 
   .img{
     position: absolute;
     right:0px;
@@ -430,18 +472,17 @@ color: #400496;
      
     bottom: 0;
   }
+
   .safe{
     margin-left: 10px;
     margin-top: 30px;
     font-size: 60px;
     line-height: 60px;
   }
-  #bgr{
-    height: 400px;
-    width: 600px;
-    position: absolute;
-    transform: translateY(0px);
+  #bgr , .small-virus , .img{
+   display: none;
   }
+  
   .long-copy{
     width:75% ;
   
