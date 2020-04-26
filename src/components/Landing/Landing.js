@@ -20,7 +20,7 @@ const Landing = () => {
     },[])
     return (
         <div clsss="container">
-            <div className="safe">SYAY SAFE</div>
+            <div className="safe">STAY SAFE</div>
             <main className="long-copy">
                 Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth
             <div className="bu-holder">
@@ -34,12 +34,18 @@ const Landing = () => {
             <img className="small-virus" src={smallvirus} alt="alt" />
             <img className="small-virus2" src={smallvirus} alt="alt" />
             <img className="img" src={virus} alt="alt"/>
-            <svg id="bgl" xmlns="http://www.w3.org/2000/svg" width="897.313" height="223.328" viewBox="0 0 897.313 223.328">
+            <svg id="bgl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 897.313 223.328">
                 <path id="left-bg" d="M907.595,1680.5l-5.456-1.312c-86.873-20.894-891.857-222.016-891.857-222.016V1680.5" transform="translate(-10.282 -1457.169)" fill="#7c3bd1" />
             </svg>
-            <svg id="bgr" xmlns="http://www.w3.org/2000/svg" width="982.411" height="700.412" viewBox="0 0 982.411 700.412">
+            <svg id="bgr" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 982.411 700.412">
                 <path id="right-bg" d="M2154.93,301.891l-4.606,3.368c-73.35,53.625-977.594,697.044-977.594,697.044H2155.14" transform="translate(-1172.729 -301.891)" fill="#7c3bd1" />
             </svg>
+
+            <svg className="lowerMobile" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 360 261.109">
+                 <path id="lower_shape" data-name="lower shape" d="M360-137.339V123.77H0V-14.083Z" transform="translate(0 137.339)" fill="#7c3bd1"/>
+            </svg>
+
+
         </div>
     );
 }
